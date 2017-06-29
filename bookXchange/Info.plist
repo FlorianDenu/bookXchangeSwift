@@ -16,10 +16,27 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.795996379699-bsgtl69ldu8ea5492rps3ighpt6srv27</string>
+				<string>fb1455159571212823</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -40,6 +57,24 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>To scann the barcode, we need access to your camera</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need to know where your book will be available</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Give access to your location to know where the book will be available</string>
+	<key>googleBookUrl</key>
+	<string>https://www.googleapis.com/books/v1/volumes?q=isbn:</string>
+	<key>googleBookApiKey</key>
+	<string>&amp;amp;key=AIzaSyBQf1D9tsmGCq9s-LZr6ad5Ua4tuUa45ck</string>
+	<key>FacebookAppID</key>
+	<string>1455159571212823</string>
+	<key>FacebookDisplayName</key>
+	<string>bookXchange</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
 	</array>
 </dict>
 </plist>
